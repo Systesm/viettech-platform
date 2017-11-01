@@ -18,18 +18,12 @@ class AdminController extends Controller
         return view('admin::index');
     }
 
+    /**
+     * Hien thi giao dien dang nhap
+     */
     public function login()
     {
         return view('admin::login');
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     * @return Response
-     */
-    public function create()
-    {
-        return view('admin::create');
     }
 
     /**
@@ -50,38 +44,4 @@ class AdminController extends Controller
         return redirect()->back();
     }
 
-    /**
-     * Show the specified resource.
-     * @return Response
-     */
-    public function show()
-    {
-        return view('admin::show');
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     * @return Response
-     */
-    public function edit()
-    {
-        return view('admin::edit');
-    }
-
-    /**
-     * Update the specified resource in storage.
-     * @param  Request $request
-     * @return Response
-     */
-    public function update(Request $request)
-    {
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     * @return Response
-     */
-    public function destroy()
-    {
-    }
 }
